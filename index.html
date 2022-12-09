@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Guess My Number</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤔</text></svg>"
+    />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta
+      name="description"
+      content="Can you guess what number I am thinking?"
+    />
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3>I am thinking of a number between 1-100.</h3>
+      <h3>Can you guess it?</h3>
+
+      <input type="text" placeholder="Num" id="guess" maxlength="3" /><br />
+      <button onclick="play()" id="my_btn">GUESS</button>
+
+      <p id="message1">No. Of Guesses: 0</p>
+      <p id="message2">Guessed Numbers are: None</p>
+      <p id="message3"></p>
+    </div>
+    <!--Script-->
+    <script src="script.js"></script>
+  </body>
+</html>
